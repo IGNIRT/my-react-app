@@ -1,0 +1,88 @@
+.header__div {
+    list-style: none;
+    display: flex;
+    column-gap: 43px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    border-bottom: 1px solid;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    column-gap: 43px;
+    justify-content: center;
+    margin: auto;
+}
+
+.header__login {
+    width: 189px;
+    height: 44px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    position: relative;
+}
+
+.header_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 7px;
+    align-items: center;
+}
+
+.header__list_2 {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    column-gap: 75px;
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+    margin: 0;
+}
+.header__item-link-solution{
+    text-decoration: none;
+    color:  #000000;
+}
+.header__item-link-products{
+    text-decoration: none;
+    color:  #000000;
+}
+.header__item-link-about_us{
+    text-decoration: none;
+    color:  #000000;
+}
+.header__item-link{
+    text-decoration: none;
+    color:  #000000;
+}
+.header__item-link--active-document{
+    text-decoration: none;
+    color:  #000000;
+}
+.header__item-link--active-contact{
+    text-decoration: none;
+    color:  #000000;
+}
+.En{
+    text-decoration: none;
+    color:  #000000;
+}
+.Fr{
+    text-decoration: none;
+    color: gainsboro;
+}
