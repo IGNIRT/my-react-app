@@ -1,6 +1,7 @@
-import React, { ReactNode, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import type { ReactNode } from 'react'; // Явный импорт типа
 import Header from './Header';
-import Footer from './Footer'; // Добавлен импорт Footer
+import Footer from './Footer';
 import Preloader from './Preloader';
 import Modal from '../ui/Modal';
 
@@ -24,7 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <main className="container" id="main">
         {children}
       </main>
-      <Footer /> {/* Добавлен компонент Footer */}
+      <Footer />
       {isModalOpen && (
         <Modal onClose={() => setIsModalOpen(false)} />
       )}

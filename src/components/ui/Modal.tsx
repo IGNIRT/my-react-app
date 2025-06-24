@@ -1,4 +1,5 @@
-import React, { FormEvent } from 'react';
+import React from 'react';
+import type { FormEvent } from 'react'; // Явный импорт типа
 
 interface ModalProps {
   onClose: () => void;

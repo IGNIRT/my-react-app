@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar';
 
 interface HeaderProps {
   openModal: () => void;
@@ -18,17 +19,10 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => (
       </div>
     </div>
     <div className="header_2">
-      <a href="#"><img src="/images/Frame.png" alt="Logo" className="header__logo logo" /></a>
-      <nav className="header__nav">
-        <ul className="header__list_2">
-          <li><a href="#" className="header__item-link-solution">Solutions</a></li>
-          <li><a href="#" className="header__item-link-products">Products</a></li>
-          <li><a href="#" className="header__item-link-about_us">About us</a></li>
-        </ul>
-      </nav>
-      <button className="header__login" onClick={openModal}>
-        Partners Resources
-      </button>
+      <a href="#">
+        <img src="/images/Frame.png" alt="Logo" className="header__logo logo" />
+      </a>
+      <Navbar openModal={openModal} />
     </div>
   </header>
 );
