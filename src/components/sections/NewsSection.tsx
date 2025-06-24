@@ -19,7 +19,7 @@ const NewsSection: React.FC = () => {
           <div className="news__doc">
             <div className="doc__content">
               <p className="news__title--doc">Documentation</p>
-              <img src="/images/Document.png" className="news__img" alt="Document" />
+              <img src="public/Document.png" className="news__img" alt="Document" />
               <a href="#" className="news__item-link--documentation">Documentation →</a>
               <div className="doc__line"></div>
             </div>

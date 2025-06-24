@@ -9,7 +9,7 @@ const ProductsSection: React.FC = () => {
           <a href="#" className="products__item-link--products-list">Products list →</a>
           <div className="product__line"></div>
         </div>
-        <img src="/images/System_Block.png" alt="System block" className="products__img" />
+        <img src="public/System_Block.png" alt="System block" className="products__img" />
       </div>
     </section>
   );
