@@ -1,0 +1,13 @@
+html,
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.body__container {
+    position: relative;
+    background-color: white;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

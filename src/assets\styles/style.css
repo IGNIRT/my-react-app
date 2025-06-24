@@ -1,0 +1,24 @@
+/* Подключение шрифтов */
+@import "fonts.css";
+
+@import "body.css";
+/*Логотип*/
+@import "logo.css";
+/*Шапка*/
+@import "header.css";
+/*Страница*/
+
+/*Главная страница*/
+@import "main.css";
+
+@import "background.css";
+
+@import "footer.css";
+
+@import "cards.css";
+
+@import "form.css";
+
+@import "preloader.css";
+
+/* @import "media.css"; */

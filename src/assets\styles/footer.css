@@ -1,0 +1,113 @@
+.footer {
+    width: 1440px;
+    position: relative;
+    height: 457px;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer__logo-year {
+    margin: 20px;
+    width: 233px;
+    padding-top: 180px;
+}
+
+.footer__title {
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 48px;
+}
+
+.footer__connection-list {
+    margin: auto;
+    padding-top: 129px;
+    width: 466px;
+    height: 197px;
+}
+
+.footer__title {
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 48px;
+}
+
+.footer__address {
+    padding-top: 181px;
+    width: 175px;
+    height: 96px;
+}
+
+.footer__linkedin {
+    padding-top: 111px;
+    width: 175px;
+    height: 96px;
+}
+
+.footer__subscription {
+    margin: auto;
+    padding-top: 78px;
+    width: 350px;
+    height: 197px;
+}
+
+.footer__subtitle {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer__lead {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer__tagline {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.footer__text {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.footer__item-link--info {
+    font-size: 15px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer__item-link--linkedin {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.footer__item-link--active {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.footer__titl {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.footer__item-link--email {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer__tit {
+    padding-top: 80px;
+    padding-left: 55px;
+}

@@ -1,0 +1,132 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e6eeff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-out, visibility 0.5s;
+}
+
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* Основной вращающийся круг */
+.loader-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 6px solid transparent;
+  border-top-color: #FF3D00;
+  border-bottom-color: #000000;
+  border-radius: 50%;
+  animation: rotation 1.8s linear infinite;
+  /* box-shadow: 0 0 15px rgba(101, 171, 248, 0.3); */
+}
+
+/* Внутренний пульсирующий круг 
+.loader-pulse {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  background: linear-gradient(145deg, #65abf8, #4a90e2);
+  border-radius: 50%;
+  animation: pulse 2.5s infinite ease-in-out;
+  box-shadow:
+    inset 0 0 12px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(101, 171, 248, 0.4);
+}
+ */
+*/
+
+/* Центральная точка */
+.loader-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  z-index: 3;
+}
+
+/* Анимации */
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Текст загрузки */
+.loader-text {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: #4a5568;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  animation: text-fade 2.2s infinite alternate;
+}
+
+@keyframes text-fade {
+  0% {
+    opacity: 0.4;
+    letter-spacing: 1.2px;
+  }
+
+  100% {
+    opacity: 1;
+    letter-spacing: 2px;
+  }
+}

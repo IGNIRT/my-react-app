@@ -1,0 +1,123 @@
+.form {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.74);
+    font-family: 'Roboto';
+    font-size: 400;
+}
+
+.contact-form-container {
+    position: fixed;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    margin: 5% auto;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+
+    border-radius: 8px;
+
+    z-index: 1;
+}
+
+.form-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.form__name {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+}
+
+.exit-button {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #707070;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+
+    font-size: 20px;
+
+    border-radius: 5px;
+
+    border: 1px solid #ddd;
+
+    box-sizing: border-box;
+}
+
+.submit-button {
+    height: 45px;
+    width: 100%;
+
+    font-size: 20px;
+
+    background-color: #ec6308;
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ec6308;
+}
+
+.exit-button {
+    background-color: transparent;
+    float: right;
+
+    border: none;
+}
+
+.cansel-button {
+    height: 45px;
+    width: 100%;
+
+    font-size: 20px;
+
+    background-color: #000000;
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.cansel-button:hover {
+    background-color: #000000;
+}
+
+.form-buttons {
+    display: flex;
+}
