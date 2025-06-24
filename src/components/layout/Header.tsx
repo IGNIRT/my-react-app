@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => (
     </div>
     <div className="header_2">
       <a href="#">
-        <img src="/images/Frame.png" alt="Logo" className="header__logo logo" />
+        <img src="public/Frame.png" alt="Logo" className="header__logo logo" />
       </a>
       <Navbar openModal={openModal} />
     </div>
