@@ -453,3 +453,163 @@
     margin-right: 0px;
     /* отступ между карточками */
 }
+/* === Адаптация под мобильные устройства === */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .div__promo,
+    .section__promo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section__promo {
+        font-size: xx-large;
+        line-height: 45px;
+    }
+
+    .section__card,
+    .photo__service,
+    .section__photo {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .services__content,
+    .section__services {
+        width: 100%;
+        margin-top: 5%;
+        left: 0;
+        top: 0;
+    }
+
+    .species__content,
+    .species__card-2_3 {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .species__card-3 {
+        position: relative;
+        right: 0;
+        margin: 20px auto;
+    }
+
+    .section__stories,
+    .stories__content {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .stories {
+        width: 100%;
+        height: auto;
+    }
+
+    .section__products,
+    .products__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news__card-1-2-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news__doc {
+        width: 100%;
+        height: auto;
+    }
+
+    .projects__content {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .projects__light {
+        scroll-snap-align: start;
+        min-width: 90%;
+        margin-right: 20px;
+    }
+}
+
+/* === Адаптация под планшеты и маленькие ноутбуки === */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .section__card {
+        width: 100%;
+    }
+
+    .species__card-2_3 {
+        width: 100%;
+    }
+
+    .projects__content {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .projects__light {
+        scroll-snap-align: start;
+        min-width: 45%;
+        margin-right: 20px;
+    }
+}
+
+/* === Адаптация под средние и большие экраны до 1440px === */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .section__card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .species__content {
+        width: 100%;
+    }
+
+    .species__card-2_3 {
+        width: 100%;
+    }
+
+    .species__card-3 {
+        position: relative;
+        right: 0;
+        margin: 20px auto;
+    }
+
+    .section__stories {
+        margin: 80px 20px;
+    }
+
+    .news__card-1-2-3 {
+        justify-content: space-between;
+    }
+
+    .projects__content {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .projects__light {
+        scroll-snap-align: start;
+        min-width: 300px;
+        margin-right: 20px;
+    }
+}

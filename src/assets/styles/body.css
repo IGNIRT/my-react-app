@@ -11,3 +11,42 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+html,
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.body__container {
+    position: relative;
+    background-color: white;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Адаптация для ноутбуков (1024px - 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .body__container {
+        padding: 0 15px;
+    }
+}
+
+/* Адаптация для планшетов (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .body__container {
+        padding: 0 10px;
+    }
+}
+
+/* Адаптация для мобильных (до 767px) */
+@media (max-width: 767px) {
+    .body__container {
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    html, body {
+        font-size: 14px;
+    }
+}

@@ -19,6 +19,7 @@
     column-gap: 43px;
     justify-content: center;
     margin: auto;
+    margin-left: 495px;
 }
 
 .header__login {
@@ -29,6 +30,7 @@
     font-weight: 400;
     line-height: 23px;
     position: relative;
+    margin-right: 24px;
 }
 
 .header_2 {
@@ -54,35 +56,138 @@
     display: flex;
     margin: 0;
 }
-.header__item-link-solution{
+
+.header__item-link-solution {
     text-decoration: none;
-    color:  #000000;
+    color: #000000;
 }
-.header__item-link-products{
+
+.header__item-link-products {
     text-decoration: none;
-    color:  #000000;
+    color: #000000;
 }
-.header__item-link-about_us{
+
+.header__item-link-about_us {
     text-decoration: none;
-    color:  #000000;
+    color: #000000;
 }
-.header__item-link{
+
+.header__item-link {
     text-decoration: none;
-    color:  #000000;
+    color: #000000;
 }
-.header__item-link--active-document{
+
+.header__item-link--active-document {
     text-decoration: none;
-    color:  #000000;
+    color: #000000;
 }
-.header__item-link--active-contact{
+
+.header__item-link--active-contact {
     text-decoration: none;
-    color:  #000000;
+    color: #000000;
 }
-.En{
+
+.header__language {
+    display: contents;
+}
+
+.En {
     text-decoration: none;
-    color:  #000000;
+    color: #000000;
 }
-.Fr{
+
+.Fr {
     text-decoration: none;
     color: gainsboro;
+}
+
+/* Адаптация для ноутбуков (1024px - 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .header__list {
+        margin-left: 300px;
+        column-gap: 30px;
+    }
+    
+    .header__list_2 {
+        column-gap: 50px;
+    }
+    
+    .header__login {
+        width: 160px;
+        height: 38px;
+        margin-right: 15px;
+    }
+}
+
+/* Адаптация для планшетов (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header__div {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .header__list {
+        margin-left: 150px;
+        column-gap: 20px;
+    }
+    
+    .header__list_2 {
+        column-gap: 35px;
+    }
+    
+    .header__login {
+        width: 140px;
+        height: 36px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+}
+
+/* Адаптация для мобильных устройств (до 767px) */
+@media (max-width: 767px) {
+    .header__div {
+        flex-direction: column;
+        padding: 10px 0;
+        align-items: center;
+    }
+    
+    .header__list {
+        margin: 0;
+        padding: 10px 0;
+        column-gap: 15px;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    
+    .header_2 {
+        flex-direction: column;
+        padding-top: 0;
+    }
+    
+    .header__nav {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .header__list_2 {
+        column-gap: 15px;
+        padding: 10px 0;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    
+    .header__login {
+        width: 90%;
+        max-width: 200px;
+        height: 40px;
+        margin: 10px auto;
+        font-size: 15px;
+    }
+    
+    .header__language {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        gap: 15px;
+    }
 }

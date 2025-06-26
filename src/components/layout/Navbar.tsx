@@ -12,9 +12,6 @@ const Navbar: React.FC<NavbarProps> = ({ openModal }) => (
       <li><a href="#" className="header__item-link-products">Products</a></li>
       <li><a href="#" className="header__item-link-about_us">About us</a></li>
     </ul>
-    <button className="header__login" onClick={openModal}>
-      Partners Resources
-    </button>
   </nav>
 );
 

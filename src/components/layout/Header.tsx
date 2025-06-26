@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar.tsx';
+import Navbar from './Navbar';
 
 interface HeaderProps {
   openModal: () => void;
@@ -23,6 +23,9 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => (
         <img src="public/Frame.png" alt="Logo" className="header__logo logo" />
       </a>
       <Navbar openModal={openModal} />
+      <button className="header__login" onClick={openModal}>
+        Partners Resources
+      </button>
     </div>
   </header>
 );

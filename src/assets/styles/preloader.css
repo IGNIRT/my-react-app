@@ -62,7 +62,7 @@
     0 0 20px rgba(101, 171, 248, 0.4);
 }
  */
-*/
+
 
 /* Центральная точка */
 .loader-dot {
@@ -128,5 +128,72 @@
   100% {
     opacity: 1;
     letter-spacing: 2px;
+  }
+}
+
+/* === Адаптация под мобильные устройства и планшеты === */
+@media (max-width: 768px) {
+  .loader-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .loader-circle {
+    border-width: 4px;
+  }
+
+  .loader-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .loader-text {
+    font-size: 12px;
+    bottom: -35px;
+    letter-spacing: 1px;
+  }
+}
+
+/* === Для экранов от 769px до 1024px (планшеты, маленькие ноутбуки) === */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .loader-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .loader-circle {
+    border-width: 5px;
+  }
+
+  .loader-dot {
+    width: 16px;
+    height: 16px;
+  }
+
+  .loader-text {
+    font-size: 13px;
+    bottom: -40px;
+  }
+}
+
+/* === Для экранов от 1025px до 1440px (средние и большие десктопы) === */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .loader-container {
+    width: 130px;
+    height: 130px;
+  }
+
+  .loader-circle {
+    border-width: 7px;
+  }
+
+  .loader-dot {
+    width: 22px;
+    height: 22px;
+  }
+
+  .loader-text {
+    font-size: 15px;
+    bottom: -50px;
   }
 }

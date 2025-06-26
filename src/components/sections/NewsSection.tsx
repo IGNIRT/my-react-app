@@ -20,7 +20,11 @@ const NewsSection: React.FC = () => {
             <div className="doc__content">
               <p className="news__title--doc">Documentation</p>
               <img src="public/Document.png" className="news__img" alt="Document" />
-              <a href="#" className="news__item-link--documentation">Documentation →</a>
+              <ul className="news__ul">
+                <li>
+                  <a href="#" className="news__item-link--documentation">Documentation -&gt;</a>
+                </li>
+              </ul>
               <div className="doc__line"></div>
             </div>
           </div>
