@@ -14,13 +14,14 @@ import NewsSection from "./components/sections/NewsSection";
 const App: React.FC = () => {
   return (
     <Layout>
+      {/* Секции сайта */}
       <div className="div__promo">
         <PromoSection />
         <CardSection />
       </div>
       <PhotoServiceSection />
       <SolutionsSection />
-      <ProjectsSection /> 
+      <ProjectsSection />
       <SpeciesSection />
       <StoriesSection />
       <ProductsSection />

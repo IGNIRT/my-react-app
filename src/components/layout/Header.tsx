@@ -22,7 +22,6 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => (
       <a href="#">
         <img src="public/Frame.png" alt="Logo" className="header__logo logo" />
       </a>
-      <Navbar openModal={openModal} />
       <button className="header__login" onClick={openModal}>
         Partners Resources
       </button>
