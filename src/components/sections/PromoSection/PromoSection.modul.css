@@ -1,0 +1,27 @@
+.div__promo {
+    display: flex;
+}
+
+.section__promo {
+    display: flex;
+    margin: auto;
+    size: 54px;
+    line-height: 61px;
+    font-size: xxx-large;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+@media (max-width: 768px) {
+    .div__promo,
+    .section__promo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section__promo {
+        font-size: xx-large;
+        line-height: 45px;
+    }
+}

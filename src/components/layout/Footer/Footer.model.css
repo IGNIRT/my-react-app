@@ -1,0 +1,249 @@
+.footer {
+    width: 1440px;
+    position: relative;
+    height: 457px;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer__logo-year {
+    margin: 20px;
+    width: 233px;
+    padding-top: 180px;
+}
+
+.footer__title {
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 48px;
+}
+
+.footer__connection-list {
+    margin: auto;
+    padding-top: 129px;
+    width: 466px;
+    height: 197px;
+}
+
+.footer__title {
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 48px;
+}
+
+.footer__address {
+    padding-top: 181px;
+    width: 175px;
+    height: 96px;
+}
+
+.footer__linkedin {
+    padding-top: 111px;
+    width: 175px;
+    height: 96px;
+}
+
+.footer__subscription {
+    margin: auto;
+    padding-top: 78px;
+    width: 350px;
+    height: 197px;
+}
+
+.footer__subtitle {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer__lead {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer__tagline {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.footer__text {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.footer__item-link--info {
+    font-size: 15px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer__item-link--linkedin {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.footer__item-link--active {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.footer__titl {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.footer__item-link--email {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer__tit {
+    padding-top: 80px;
+    padding-left: 55px;
+}
+
+/* === Адаптация под мобильные устройства (до 768px) === */
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logo-year,
+    .footer__connection-list,
+    .footer__address,
+    .footer__linkedin,
+    .footer__subscription {
+        width: 90%;
+        margin: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer__logo-year {
+        padding-top: 40px;
+    }
+
+    .footer__title,
+    .footer__titl {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 20px;
+    }
+
+    .footer__subtitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .footer__lead,
+    .footer__tagline,
+    .footer__text,
+    .footer__item-link--info,
+    .footer__item-link--email {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer__connection-list,
+    .footer__subscription {
+        height: auto;
+    }
+
+    .footer__tit {
+        padding-top: 20px;
+        padding-left: 0;
+    }
+}
+
+/* === Адаптация под планшеты (от 769px до 1024px) === */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer {
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .footer__content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .footer__logo-year,
+    .footer__connection-list,
+    .footer__address,
+    .footer__linkedin,
+    .footer__subscription {
+        width: 45%;
+        margin: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer__logo-year {
+        order: 1;
+    }
+
+    .footer__connection-list {
+        order: 3;
+    }
+
+    .footer__address {
+        order: 2;
+    }
+
+    .footer__linkedin {
+        order: 4;
+    }
+
+    .footer__subscription {
+        order: 5;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__tit {
+        padding-left: 0;
+    }
+}
+
+/* === Адаптация для экранов от 1025px до 1440px === */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .footer {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .footer__logo-year,
+    .footer__connection-list,
+    .footer__address,
+    .footer__linkedin,
+    .footer__subscription {
+        width: auto;
+    }
+
+    .footer__connection-list {
+        padding-top: 129px;
+    }
+
+    .footer__subscription {
+        padding-top: 78px;
+    }
+}

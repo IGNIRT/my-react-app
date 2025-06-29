@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import type { FormEvent } from 'react';
-import '../../assets/styles/form.css'; // Добавьте эту строку
+import './Modal.modul.css'; // Добавьте эту строку
 
 interface ModalProps {
   onClose: () => void;

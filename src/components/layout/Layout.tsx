@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import type { ReactNode } from 'react'; 
 import { Outlet } from 'react-router-dom'; // Добавляем Outlet
-import Header from './Header';
-import Footer from './Footer';
-import Preloader from './Preloader';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import Preloader from './Preloader/Preloader';
 import Modal from '../ui/Modal';
 
 interface LayoutProps {

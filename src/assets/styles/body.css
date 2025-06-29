@@ -32,7 +32,7 @@ body {
     }
 }
 
-/* Адаптация для планшетов (768px - 1023px) */
+/* Адаптация для планшетов (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1023px) {
     .body__container {
         padding: 0 10px;
@@ -50,3 +50,8 @@ body {
         font-size: 14px;
     }
 }
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+

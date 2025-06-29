@@ -1,20 +1,23 @@
-
+/*Шрифт*/
 @import "fonts.css";
 
 @import "body.css";
 
-@import "logo.css";
+/*Блоки*/
+@import "src/components/sections/NewSection/NewSection.modul.css";
+@import "src/components/layout/Header/Header.modul.css";
+@import "src/components/sections/PromoSection/PromoSection.modul.css";
+@import "src/components/sections/PhotoServiceSection/PhotoServisSection.modal.css";
+@import "src/components/layout/Footer/Footer.model.css";
+@import "src/components/cards/Cards.modul.css";
+@import "src/components/ui/Modal.modul.css";
+@import "src/components/sections/PromoSection/PromoSection.modul.css"; 
+@import "src/components/sections/SolutionsSection/SolutionsSection.modul.css";
+@import "src/components/sections/ProjectsSection/ProjectSection.modul.css";
+@import "src/components/sections/SpeciesSection/SpeciesSection.modul.css";
+@import "src/components/sections/StoriesSection/StoriesSection.module.css";
+@import "src/components/sections/ProductsSection/ProductsSection.modul.css";
+@import "src/components/layout/Preloader/Preloader.modul.css";
 
-@import "header.css";
-
-@import "main.css";
-
+/*Задний фон*/
 @import "background.css";
-
-@import "footer.css";
-
-@import "cards.css";
-
-@import "form.css";
-
-@import "preloader.css";

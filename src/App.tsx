@@ -2,18 +2,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
-import HomePage from './pages/HomePage';
 import CardsPage from './pages/CardPage';
 import NotFoundPage from './pages/NotFoundPage';
-import PromoSection from './components/sections/PromoSection';
-import CardSection from './components/sections/CardSection';
-import PhotoServiceSection from './components/sections/PhotoServiceSection';
-import SolutionsSection from './components/sections/SolutionsSection';
-import ProjectsSection from './components/sections/ProjectsSection';
-import SpeciesSection from './components/sections/SpeciesSection';
-import StoriesSection from './components/sections/StoriesSection';
-import ProductsSection from './components/sections/ProductsSection';
-import NewsSection from './components/sections/NewsSection';
+import PromoSection from './components/sections/PromoSection/PromoSection';
+import CardSection from './components/sections/CardSection/CardSection';
+import PhotoServiceSection from './components/sections/PhotoServiceSection/PhotoServiceSection';
+import SolutionsSection from './components/sections/SolutionsSection/SolutionsSection';
+import ProjectsSection from './components/sections/ProjectsSection/ProjectsSection';
+import SpeciesSection from './components/sections/SpeciesSection/SpeciesSection';
+import StoriesSection from './components/sections/StoriesSection/StoriesSection';
+import ProductsSection from './components/sections/ProductsSection/ProductsSection';
+import NewsSection from './components/sections/NewSection/NewsSection';
 
 const App: React.FC = () => {
   return (
