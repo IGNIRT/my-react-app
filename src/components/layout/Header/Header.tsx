@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => (
     </div>
     <div className="header_2">
      <Link to="/">
-        <img src="/Frame.png" alt="Logo" className="header__logo logo" />
+        <img src="img/Frame.png" alt="Logo" className="header__logo logo" />
       </Link>
       <nav className="header__nav">
         <ul className="header__list_2">

@@ -1,5 +1,5 @@
 .background__content {
-    background-image:  url("public/Vector_1.png"), url("public/Vector_2.png"), url("public/Vector_4.png"), url("public/Vector_3.png");
+    background-image:  url("img/Vector_1.png"), url("img/Vector_2.png"), url("img/Vector_4.png"), url("img/Vector_3.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 0 -17px, 10% 56%, bottom 74px right 135px, right 45% bottom 89%;;
     width: 555px;

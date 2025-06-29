@@ -1,12 +1,8 @@
 .species__content {
     display: flex;
     justify-content: space-between;
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    padding: 20px;
-    box-sizing: border-box;
+    width: 1400px;
+    height: 336.6px;
 }
 
 .species__card-2_3 {
@@ -15,8 +11,7 @@
     margin: auto;
     background-color: #E8E9EA;
     height: 336px;
-    width: 100%;
-    max-width: 984px;
+    width: 984px;
 }
 
 .species__card-3 {
@@ -27,11 +22,21 @@
     right: 540px;
 }
 
+
 .species__title {
     font-size: 36px;
     line-height: 39px;
     width: 359px;
-    height: auto;
+    height: 119px;
+    margin: 32px;
+    padding-bottom: 93px;
+}
+
+.species__title {
+    font-size: 36px;
+    line-height: 39px;
+    width: 359px;
+    height: 119px;
     margin: 32px;
     padding-bottom: 93px;
 }
@@ -58,7 +63,21 @@
     line-height: 26px;
 }
 
-.species__item-link--strato-enterprice,
+.species__item-link--strato-enterprice {
+    text-decoration: none;
+    color: #000000;
+}
+
+.species__item-link--strato-cloud-services {
+    text-decoration: none;
+    color: #000000;
+}
+
+.species__item-link--strato-enterprise {
+    text-decoration: none;
+    color: #000000;
+}
+
 .species__item-link--strato-cloud-services {
     text-decoration: none;
     color: #000000;
@@ -78,118 +97,39 @@
     padding-bottom: 5px;
 }
 
-/* Адаптация для 1440px */
-@media (max-width: 1440px) {
-    .species__content {
-        padding: 20px 40px;
-    }
-    
-    .species__card-3 {
-        right: calc(50% - 200px);
-    }
-    
-    .species__title {
-        font-size: 32px;
-        line-height: 36px;
-        width: 300px;
-        padding-bottom: 60px;
-    }
-    
-    .subtitle {
-        font-size: 22px;
-        line-height: 24px;
-        margin: 60px;
-    }
-}
-
-/* Адаптация для 768px */
 @media (max-width: 768px) {
-    .species__content {
-        flex-direction: column;
-        padding: 15px;
-    }
-    
+    .species__content,
     .species__card-2_3 {
         flex-direction: column;
+        width: 100%;
         height: auto;
-        max-width: 100%;
     }
-    
+
     .species__card-3 {
         position: relative;
         right: 0;
-        width: 100%;
-        margin: 20px 0;
-        justify-content: center;
-    }
-    
-    .species__title {
-        font-size: 28px;
-        line-height: 32px;
-        width: 100%;
-        margin: 20px 0;
-        padding-bottom: 30px;
-        text-align: center;
-    }
-    
-    .species__text {
         margin: 20px auto;
-        justify-content: center;
-    }
-    
-    .subtitle {
-        font-size: 20px;
-        line-height: 22px;
-        margin: 40px 20px;
-        text-align: center;
-    }
-    
-    .species__energy,
-    .species__system-integrators {
-        margin: 20px;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .species__system-integrators {
-        padding: 30px;
-    }
-    
-    .species__img {
-        display: block;
-        margin: 0 auto;
     }
 }
 
-/* Планшетная адаптация 769-1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
     .species__card-2_3 {
-        width: 90%;
-    }
-    
-    .species__card-3 {
-        right: 40%;
-    }
-    
-    .species__title {
-        font-size: 30px;
-        width: 300px;
-        padding-bottom: 60px;
-    }
-    
-    .subtitle {
-        font-size: 22px;
-        margin: 60px 40px;
+        width: 100%;
     }
 }
 
-/* Адаптация 1025-1439px */
-@media (min-width: 1025px) and (max-width: 1439px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .species__content {
-        max-width: 1200px;
+        width: 100%;
     }
-    
+
+    .species__card-2_3 {
+        width: 100%;
+    }
+
     .species__card-3 {
-        right: 45%;
+        position: relative;
+        right: 0;
+        margin: 20px auto;
     }
 }

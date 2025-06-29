@@ -2,7 +2,7 @@
     {
         "cardID": "1",
         "title": "Light Commercial Buildings",
-        "img": "/public/Rectangle_3.png",
+        "img": "/img/Rectangle_3.png",
         "subtitle": "Strato",
         "content": "Light Commercial",
         "links1": "Extremely Simple",
@@ -12,7 +12,7 @@
     {
         "cardID": "2",
         "title": "Large Facilities",
-        "img": "/public/Rectangle_4.png",
+        "img": "/img/Rectangle_4.png",
         "subtitle": "Strato",
         "content": "Enterprise",
         "links1": "Flexible and Powerful Software",
@@ -22,7 +22,7 @@
     {
         "cardID": "3",
         "title": "Add-on solution available",
-        "img": "/public/Ablaka.png",
+        "img": "/img/Ablaka.png",
         "subtitle": "Strato",
         "content": "Cloud Services",
         "links1": "Alerting and Backup",

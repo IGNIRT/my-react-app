@@ -5,7 +5,7 @@ const PhotoServiceSection: React.FC = () => {
     <div className="photo__service">
       <section className="section__photo" id="photo">
         <div className="background__content">
-          <img src="public/Rectangle.png" alt="Building" className="photo__image" />
+          <img src="img/Rectangle.png" alt="Building" className="photo__image" />
         </div>
         <div className="photo__content"></div>
       </section>
@@ -19,7 +19,7 @@ const PhotoServiceSection: React.FC = () => {
               <li className="services__text-advantages">Features Rich & Cost Effective</li>
             </ul>
             <a href="#" className="services__item-link--active">View product →</a>
-            <img src="public/Line_2.png" alt="" className="line_2" />
+            <img src="img/Line_2.png" alt="" className="line_2" />
           </div>
         </div>
       </section>

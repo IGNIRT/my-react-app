@@ -9,7 +9,7 @@ const CardSections: React.FC = () => {
       </section>
       <section className="section__card" id="card">
         <div className="card__content">
-          <img src="public/1.png" alt="Building Automation System" className="card__image" />
+          <img src="img/1.png" alt="Building Automation System" className="card__image" />
         </div>
       </section>
     </div>

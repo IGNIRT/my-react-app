@@ -4,7 +4,7 @@ const StoriesSection: React.FC = () => {
   return (
     <section className="section__stories" id="stories">
       <div className="stories__content">
-        <img src="public/Ceray_dom.png" alt="Gray building" className="stories__img" />
+        <img src="img/Ceray_dom.png" alt="Gray building" className="stories__img" />
         <article className="stories__success-stories">
           <div className="stories">
             <p className="stories__title">Success Stories</p>

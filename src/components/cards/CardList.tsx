@@ -28,42 +28,13 @@ const CardList: React.FC<CardListProps> = ({ limit }) => { // Используе
 
   // Локальные резервные данные
   const localCardsData: CardData[] = [
-    {
-      cardID: "1",
-      title: "Light Commercial Buildings",
-      img: "public/Rectangle_3.png",
-      subtitle: "Strato",
-      content: "Light Commercial",
-      links1: "Extremely Simple",
-      links2: "Compatible with Strato Enterprise",
-      links3: "Learn more ->",
-    },
-    {
-      cardID: "2",
-      title: "Large Facilities",
-      img: "public/Rectangle_4.png",
-      subtitle: "Strato",
-      content: "Enterprise",
-      links1: "Flexible and Powerful Software",
-      links2: "Integrates with Strato Light Commercial",
-      links3: "Learn more ->",
-    },
-    {
-      cardID: "3",
-      title: "Add-on solution available",
-      img: "public/Ablaka.png",
-      subtitle: "Strato",
-      content: "Cloud Services",
-      links1: "Alerting and Backup",
-      links2: "Energy Efficiency Services",
-      links3: "Learn more ->",
-    }
+    
   ];
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data.json');
+        const response = await fetch('public/data.json');
         
         if (!response.ok) {
           throw new Error('Failed to fetch data');

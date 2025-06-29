@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__logo-year">
-          <img src="public/logga.png" className="footer__logo" alt="Logo" />
+          <img src="img/logga.png" className="footer__logo" alt="Logo" />
           <p className="footer__title">©2020</p>
         </div>
 
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
         <div className="footer__address">
           <p className="footer__titl">Follow Us</p>
           <ul className="footer__twitter">
-            <img src="public/Twitter.png" className="footer__img" alt="Twitter" />
+            <img src="img/Twitter.png" className="footer__img" alt="Twitter" />
             <a href="#" className="footer__item-link--active">
               Twitter
             </a>
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer__linkedin">
           <ul className="footer__linkedin">
-            <img src="public/Linkedin.png" className="footer__pic" alt="LinkedIn" />
+            <img src="img/Linkedin.png" className="footer__pic" alt="LinkedIn" />
             <a href="#" className="footer__item-link--linkedin">
               LinkedIn
             </a>
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
         <a href="#" className="footer__item-link--email">
           Email address -
         </a>
-        <img src="public/Line 12.png" className="footer__image" alt="Divider" />
+        <img src="img/Line 12.png" className="footer__image" alt="Divider" />
         <div className="footer__rights">
           <p className="footer__tit">Design and code by MamboMambo</p>
         </div>
