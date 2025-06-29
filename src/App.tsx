@@ -20,7 +20,7 @@ const App: React.FC = () => {
       </div>
       <PhotoServiceSection />
       <SolutionsSection />
-      <ProjectsSection />
+      <ProjectsSection /> 
       <SpeciesSection />
       <StoriesSection />
       <ProductsSection />

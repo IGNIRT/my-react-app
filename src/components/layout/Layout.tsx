@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import type { ReactNode } from 'react'; // Явный импорт типа
+import type { ReactNode } from 'react'; 
 import Header from './Header';
 import Footer from './Footer';
 import Preloader from './Preloader';
 import Modal from '../ui/Modal';
-
+import CardList from '../cards/CardList';
 interface LayoutProps {
   children: ReactNode;
 }

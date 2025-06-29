@@ -2,9 +2,7 @@
 .projects__container {
   position: relative;
   width: 100%;
-  height: 615px;
-  /* Фиксированная высота для десктопа */
-  overflow: hidden;
+  height: 615px; /* Фиксированная высота для предотвращения скачков */
 }
 
 .projects__content {
@@ -16,110 +14,40 @@
 
 .projects__light {
   flex: 0 0 auto;
-  width: 100%;
-  max-width: 485px;
-  margin: 0 auto;
-  opacity: 0;
+  width: 100%; /* Карточки занимают всю ширину контейнера */
+  max-width: 485px; /* Максимальный размер как в оригинале */
+  margin: 0 auto; /* Центрирование */
+  opacity: 0; /* По умолчанию все карточки скрыты */
   z-index: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none;
-  padding: 20px;
-  /* Добавляем внутренние отступы */
-  box-sizing: border-box;
-  /* Учитываем padding в ширине */
+  pointer-events: none; /* Отключаем взаимодействие */
 }
 
 .projects__light.active {
   z-index: 2;
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 1; /* Только активная карточка видима */
+  pointer-events: auto; /* Включаем взаимодействие */
 }
 
 /* Анимация появления карточек */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .animate-card {
   animation: fadeIn 0.5s ease forwards;
 }
 
-/* Адаптация под разные устройства */
-@media (max-width: 1440px) {
-  .projects__container {
-    height: 580px;
-  }
-
-  .projects__light {
-    max-width: 440px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .projects__container {
-    height: 540px;
-  }
-
-  .projects__light {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 992px) {
-  .projects__container {
-    height: 500px;
-  }
-
-  .projects__light {
-    max-width: 380px;
-  }
-}
-
+/* Адаптация под мобильные устройства */
 @media (max-width: 768px) {
-  .projects__container {
-    height: 450px;
-  }
-
   .projects__light {
     max-width: 350px;
-    padding: 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .projects__container {
-    height: 400px;
-  }
-
-  .projects__light {
-    max-width: 300px;
-    padding: 12px;
   }
 }
 
 @media (max-width: 480px) {
-  .projects__container {
-    height: 380px;
-  }
-
   .projects__light {
-    max-width: 280px;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 360px) {
-  .projects__container {
-    height: 350px;
-  }
-
-  .projects__light {
-    max-width: 260px;
+    max-width: 300px;
   }
 }
