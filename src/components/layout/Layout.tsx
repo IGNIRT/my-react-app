@@ -1,12 +1,14 @@
+// src/components/layout/Layout.tsx
 import React, { useState, useEffect } from 'react';
 import type { ReactNode } from 'react'; 
+import { Outlet } from 'react-router-dom'; // Добавляем Outlet
 import Header from './Header';
 import Footer from './Footer';
 import Preloader from './Preloader';
 import Modal from '../ui/Modal';
-import CardList from '../cards/CardList';
+
 interface LayoutProps {
-  children: ReactNode;
+  children?: ReactNode; // Делаем children необязательными
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
@@ -23,7 +25,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {isLoading && <Preloader />}
       <Header openModal={() => setIsModalOpen(true)} />
       <main className="container" id="main">
-        {children}
+        {/* Используем Outlet для вложенных маршрутов */}
+        {children || <Outlet />}
       </main>
       <Footer />
       {isModalOpen && (

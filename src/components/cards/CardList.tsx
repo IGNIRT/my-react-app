@@ -12,14 +12,18 @@ interface CardData {
   links3: string;
 }
 
-const CardList: React.FC = () => {
+interface CardListProps {
+  limit?: number;
+}
+
+const CardList: React.FC<CardListProps> = ({ limit }) => { // Используем интерфейс пропсов
   const [cards, setCards] = useState<CardData[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  const intervalRef = useRef<number | null>(null); // Изменено на number
+  const intervalRef = useRef<number | null>(null);
   const isHovered = useRef(false);
 
   // Локальные резервные данные
@@ -68,29 +72,33 @@ const CardList: React.FC = () => {
         const data: CardData[] = await response.json();
         
         const isValidData = Array.isArray(data) && data.length > 0 && 
-                            data.every(item => 
-                              'cardID' in item && 
-                              'title' in item && 
-                              'img' in item
-                            );
+          data.every(item => 
+            'cardID' in item && 
+            'title' in item && 
+            'img' in item
+          );
         
         if (!isValidData) {
           throw new Error('Invalid data structure');
         }
-        
-        setCards(data);
+
+        // Применяем лимит
+        const limitedData = limit ? data.slice(0, limit) : data;
+        setCards(limitedData);
         setError(null);
       } catch (err) {
         console.error('Error loading data:', err);
         setError('Failed to load data. Using local backup data.');
-        setCards(localCardsData);
+        // Применяем лимит к локальным данным
+        const limitedLocalData = limit ? localCardsData.slice(0, limit) : localCardsData;
+        setCards(limitedLocalData);
       } finally {
         setLoading(false);
       }
     };
 
     fetchData();
-  }, []);
+  }, [limit]); // Добавляем limit в зависимости
 
   // Автопрокрутка слайд-шоу
   useEffect(() => {
@@ -145,7 +153,7 @@ const CardList: React.FC = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
+  
   // Обработчики для паузы при наведении
   const handleMouseEnter = () => {
     isHovered.current = true;

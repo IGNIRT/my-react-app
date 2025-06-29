@@ -448,11 +448,12 @@
 
 .projects__light {
     min-width: 300px;
-    /* ширина одной карточки */
+  
     flex-shrink: 0;
     margin-right: 0px;
-    /* отступ между карточками */
+    
 }
+
 /* === Адаптация под мобильные устройства === */
 @media (max-width: 768px) {
     .container {
@@ -612,4 +613,46 @@
         min-width: 300px;
         margin-right: 20px;
     }
+}
+/* Добавьте в ваш CSS */
+.section-title {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.section-title:hover {
+  color: #ec6308;
+}
+
+.projects__title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.not-found {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ec6308;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #d45a07;
+}
+
+.solutions__item-link--active {
+  transition: color 0.3s ease;
+}
+
+.solutions__item-link--active:hover {
+  color: #ec6308; 
 }
