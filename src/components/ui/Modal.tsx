@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import type { FormEvent } from 'react';
-import './Modal.modul.css'; // Добавьте эту строку
+import './Modal.modul.css'; 
 
 interface ModalProps {
   onClose: () => void;
@@ -72,7 +72,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
     >
       <div className="contact-form-container">
         <div className="form-menu">
-          <h2 className="form__name">Register</h2>
+          <h2 className="form__name">Регистрация</h2>
           <button 
             className="exit-button" 
             onClick={onClose}
@@ -88,7 +88,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
           ref={formRef}
         >
           <div className="form-group">
-            <label htmlFor="surname">Surname</label>
+            <label htmlFor="surname">Фамилия</label>
             <input 
               type="text" 
               id="surname" 
@@ -102,7 +102,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Имя</label>
             <input 
               type="text" 
               id="name" 
@@ -116,7 +116,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Почта</label>
             <input 
               type="email" 
               id="email" 
@@ -130,7 +130,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Пароль</label>
             <input 
               type="password" 
               id="password" 
@@ -145,13 +145,13 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
           </div>
           
           <div className="form-buttons">
-            <button type="submit" className="submit-button">Submit</button>
+            <button type="submit" className="submit-button">Зарегистрировать</button>
             <button 
               type="button" 
               className="cancel-button" 
               onClick={onClose}
             >
-              Cancel
+              Назад
             </button>
           </div>
         </form>

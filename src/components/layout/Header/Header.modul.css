@@ -194,8 +194,8 @@
 .logo {
     width: 159px;
     height: 36px;
-    display: block; /* Для корректного позиционирования */
-    background-size: contain; /* Сохраняем пропорции */
+    display: block; 
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 }

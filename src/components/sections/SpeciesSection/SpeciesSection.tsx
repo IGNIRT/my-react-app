@@ -5,25 +5,28 @@ const SpeciesSection: React.FC = () => {
     <section className="section__species" id="species">
       <div className="species__content">
         <div className="species__card">
-          <p className="species__title">Don’t know what kind of solutions you need?</p>
-          <a href="#" className="species__text">Compare the solutions →</a>
+          <p className="species__title">Не знаете, какие решения вам нужны?</p>
+          <a href="#" className="species__text">Сравните решения →</a>
         </div>
         <div className="species__card-2_3">
           <div className="species__2">
-            <p className="subtitle">Distributors</p>
+            <p className="subtitle">
+              Дистрибьюторы</p>
           </div>
           <div className="species__card-3">
             <div className="species__system-integrators">
-              <p className="species__title-card-3">System Integrators</p>
-              <a href="#" className="species__item-link">Strato Enterprise →</a>
+              <p className="species__title-card-3">
+                Системные интеграторы</p>
+              <p className="species__item-link">Страто Энтерпрайз</p>
               <img src="img/Line 4.png" alt="Line" className="species__img" />
-              <a href="#" className="species__item-link--strato-cloud-services">Strato Cloud Services →</a>
+              <p  className="species__item-link--strato-cloud-services">Облачные сервисы Страто </p>
             </div>
             <div className="species__energy">
-              <p className="species__title-card-3">Energy Service company/MSI</p>
-              <a href="#" className="species__item-link--strato-enterprise">Strato Enterprise →</a>
+              <p className="species__title-card-3">Энергосервисная компания/MSI</p>
+              <p className="species__item-link--strato-enterprise">Страто Энтерпрайз</p>
               <img src="img/Line 5.png" alt="Line-1" className="species__img-line-1" />
-              <a href="#" className="species__item-link--strato-cloud-services">Strato Cloud Services →</a>
+              < p className="species__item-link--strato-cloud-services">
+                Облачные сервисы Страто</p>
               <img src="img/Line 6.png" alt="Line-2" className="species__img-line-2" />
             </div>
           </div>

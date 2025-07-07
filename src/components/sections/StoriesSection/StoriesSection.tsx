@@ -7,11 +7,12 @@ const StoriesSection: React.FC = () => {
         <img src="img/Ceray_dom.png" alt="Gray building" className="stories__img" />
         <article className="stories__success-stories">
           <div className="stories">
-            <p className="stories__title">Success Stories</p>
+            <p className="stories__title">
+              Истории успеха</p>
             <p className="stories__text">
-              Hundreds of projects delivered in 10 years +. All types of buildings will benefit from a Strato Automation™ solution.
+              Сотни проектов, реализованных за 10 лет. Все типы зданий выиграют от решения Strato Automation™.
             </p>
-            <a href="#" className="stories__item-link--our-collaborations">Our collaborations →</a>
+            <a href="#" className="stories__item-link--our-collaborations">Наше сотрудничество →</a>
             <div className="create-line__2"></div>
           </div>
         </article>

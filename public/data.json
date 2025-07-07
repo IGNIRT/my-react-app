@@ -1,32 +1,32 @@
 [
     {
         "cardID": "1",
-        "title": "Light Commercial Buildings",
+        "title": "Легкие коммерческие здания",
         "img": "/img/Rectangle_3.png",
-        "subtitle": "Strato",
-        "content": "Light Commercial",
-        "links1": "Extremely Simple",
-        "links2": "Compatible with Strato Enterprise",
-        "links3": "Learn more ->"
+        "subtitle": "Страто",
+        "content": "Легкая реклама",
+        "links1": "Чрезвычайно Просто",
+        "links2": "Совместимо с Страто Предприятиями",
+        "links3": "Узнать больше ->"
     },
     {
         "cardID": "2",
-        "title": "Large Facilities",
+        "title": "Большие объекты",
         "img": "/img/Rectangle_4.png",
-        "subtitle": "Strato",
-        "content": "Enterprise",
-        "links1": "Flexible and Powerful Software",
-        "links2": "Integrates with Strato Light Commercial",
-        "links3": "Learn more ->"
+        "subtitle": "Страто",
+        "content": "Предприятие",
+        "links1": "Гибкое и мощное программное обеспечение",
+        "links2": "Интегрируется с Страто Легкие коммерческие здания",
+        "links3": "Узнать больше ->"
     },
     {
         "cardID": "3",
-        "title": "Add-on solution available",
+        "title": "Доступно дополнительное решение",
         "img": "/img/Ablaka.png",
-        "subtitle": "Strato",
-        "content": "Cloud Services",
-        "links1": "Alerting and Backup",
-        "links2": "Energy Efficiency Services",
-        "links3": "Learn more ->"
+        "subtitle": "Страто",
+        "content": "Облачные сервисы",
+        "links1": "Облачные сервисы",
+        "links2": "Услуги по энергоэффективности",
+        "links3": "Узнать больше ->"
     }
 ]

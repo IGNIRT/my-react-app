@@ -9,7 +9,7 @@ const CardsPage: React.FC = () => {
 
   return (
     <div>
-      <h1 className="section-title">All Cards</h1>
+      <h1 className="section-title">Все карты</h1>
       <CardList limit={limit} />
     </div>
   );

@@ -5,8 +5,8 @@ const ProductsSection: React.FC = () => {
     <section className="section__products" id="products">
       <div className="products__content">
         <div className="product__text">
-          <p className="products__title">For each solution, its range of products</p>
-          <a href="#" className="products__item-link--products-list">Products list →</a>
+          <p className="products__title">Для каждого решения свой ассортимент продукции</p>
+          <a href="#" className="products__item-link--products-list">Список продуктов →</a>
           <div className="product__line"></div>
         </div>
         <img src="img/System_Block.png" alt="System block" className="products__img" />
