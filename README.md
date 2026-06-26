@@ -1,4 +1,4 @@
-# my-react-app
+# Starto Automato 
 
 # https://www.figma.com/design/Rg3v54Bd1ZaVPXofhxCtB6/Strato-Automation?node-id=0-1&p=f&t=7qVG0PmPfwWK8KYu-0
 
